@@ -48,7 +48,7 @@ export function ApplicationProcess() {
               variant="secondary"
               size="lg"
               icon={<ArrowRight className="h-6 w-6" />}
-              onClick={() => navigate('/apply')}
+              onClick={() => navigate('/application/trip-details')}
             >
               {tCommon('buttons.applyNow')}
             </Button>

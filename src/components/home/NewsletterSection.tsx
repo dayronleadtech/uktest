@@ -40,14 +40,14 @@ export function NewsletterSection() {
                     size="md"
                     icon={<ArrowRight className="h-6 w-6" />}
                     iconPosition="right"
-                    onClick={() => navigate('/apply')}
+                    onClick={() => navigate('/application/trip-details')}
                   >
                     {t('buttons.applyNow')}
                   </Button>
                 </div>
                 <div className="flex md:hidden w-full">
                   <button
-                    onClick={() => navigate('/apply')}
+                    onClick={() => navigate('/application/trip-details')}
                     className="flex items-center justify-center gap-2 px-4 py-2 border border-white text-white rounded-md hover:bg-white hover:text-primary transition-colors w-full sm:w-auto"
                   >
                     <span className="hidden sm:inline">APPLY NOW</span>

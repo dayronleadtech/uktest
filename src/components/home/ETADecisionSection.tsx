@@ -91,7 +91,7 @@ export function ETADecisionSection() {
             variant="primary"
             size="lg"
             icon={<ArrowRight className="h-5 w-5" />}
-            onClick={() => navigate('/apply')}
+            onClick={() => navigate('/application/trip-details')}
           >
             {tCommon('buttons.applyNow')}
           </Button>

@@ -1,8 +1,7 @@
-import { useNavigate, useLocation } from 'react-router-dom'
-import { Menu, X, FileText, Info, LogIn } from 'lucide-react'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
+import { Menu, X, LogIn } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { useUiStore } from '@/store/uiStore'
-import { LanguageCurrencySelector } from '@/components/ui/LanguageCurrencySelector'
 
 export function Navbar() {
   const { t } = useTranslation('common')
@@ -24,26 +23,27 @@ export function Navbar() {
       {/* Desktop + mobile top bar — 5-column grid */}
       <div className="grid grid-cols-5 py-4 px-6 sm:px-6 md:px-12 flex items-center max-w-7xl mx-auto">
         {/* Col 1: Logo */}
-        <div className="flex items-center">
-          <span
-            onClick={() => go('/')}
+        <div className="flex flex-col items-start justify-center min-w-0">
+          <Link
+            to="/"
+            onClick={() => setMobileNavOpen(false)}
             className="flex items-center cursor-pointer"
           >
             <img
-              src="/assets/svgs/site-logo.svg"
+              src="http://uk.ukvisaportals.com.sandbox/static/img/unitedkingdometa/unitedkingdometa1/logo_lg.webp"
               alt="UK Visa Portal"
-              className="h-18 pl-2 md:h-20 w-auto scale-200 md:scale-220 object-contain"
-              width="180"
+              className="w-auto"
+              width="250"
               height="40"
             />
-          </span>
+          </Link>
         </div>
 
         {/* Cols 2-4 (mobile): centered apply button */}
         <div className="lg:hidden flex-1 col-span-3 flex justify-center mx-4">
           {!isOnApplication && (
             <button
-              onClick={() => go('/apply')}
+              onClick={() => go('/application/trip-details')}
               className="bg-white text-primary px-2 py-1.5 rounded-lg font-semibold text-sm hover:bg-gray-50 transition-colors"
             >
               {t('buttons.applyNow')}
@@ -71,43 +71,15 @@ export function Navbar() {
 
         {/* Cols 2-5 (desktop): nav links + actions */}
         <div className="hidden col-span-4 lg:flex items-center space-x-8 ml-auto">
-          {!isOnApplication && (
-            <>
-              <span
-                className={`text-nowrap cursor-pointer transition-colors ${pathname === '/blog' ? 'text-white' : 'text-white/90 hover:text-white'}`}
-                onClick={() => go('/blog')}
-              >
-                {t('navigation.articles')}
-              </span>
-              <span
-                className={`text-nowrap cursor-pointer transition-colors ${pathname === '/about' ? 'text-white' : 'text-white/90 hover:text-white'}`}
-                onClick={() => go('/about')}
-              >
-                {t('navigation.aboutUs')}
-              </span>
-            </>
-          )}
-
           <div className="flex items-center space-x-8">
-            <LanguageCurrencySelector className="text-nowrap text-white/90 hover:text-white" />
-
-            <div className="flex items-center space-x-2">
               {!isOnApplication && (
                 <button
-                  onClick={() => go('/apply')}
+                  onClick={() => go('/application/trip-details')}
                   className="bg-white text-primary px-4 py-2 rounded-lg font-semibold text-sm hover:bg-gray-50 hover:px-6 transition-all duration-300 ease-in-out"
                 >
                   {t('buttons.applyNow')}
                 </button>
               )}
-              {/* Login button (unauthenticated state) */}
-              <button
-                onClick={() => go('/login')}
-                className="border border-white rounded-xl text-white px-4 py-2 text-sm hover:bg-white/10 hover:border-white/80 transition-colors cursor-pointer"
-              >
-                {t('navigation.login')}
-              </button>
-            </div>
           </div>
         </div>
       </div>
@@ -119,28 +91,6 @@ export function Navbar() {
           className="lg:hidden bg-white border-t border-gray-200 shadow-lg"
         >
           <div className="px-4 py-2 space-y-2">
-            {!isOnApplication && (
-              <>
-                <div className="py-2">
-                  <span
-                    className={`transition-colors cursor-pointer flex items-center ${pathname === '/blog' ? 'text-primary' : 'text-gray-700 hover:text-primary'}`}
-                    onClick={() => go('/blog')}
-                  >
-                    <FileText className="h-5 w-5 mr-2" />
-                    {t('navigation.articles')}
-                  </span>
-                </div>
-                <div className="py-2">
-                  <span
-                    className={`transition-colors cursor-pointer flex items-center ${pathname === '/about' ? 'text-primary' : 'text-gray-700 hover:text-primary'}`}
-                    onClick={() => go('/about')}
-                  >
-                    <Info className="h-5 w-5 mr-2" />
-                    {t('navigation.aboutUs')}
-                  </span>
-                </div>
-              </>
-            )}
             <div className="py-2">
               <button
                 onClick={() => go('/login')}

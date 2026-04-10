@@ -23,7 +23,7 @@ export default function EligibleCountries() {
 
   function handleSelect(id: string) {
     setSelectedCountry(id)
-    navigate('/apply')
+    navigate('/application/trip-details')
   }
 
   return (

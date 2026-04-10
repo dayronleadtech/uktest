@@ -54,7 +54,7 @@ export function ETAValiditySection() {
             variant="primary"
             size="lg"
             icon={<ArrowRight className="h-6 w-6" />}
-            onClick={() => navigate('/apply')}
+            onClick={() => navigate('/application/trip-details')}
             className="px-12 py-4"
           >
             {tCommon('buttons.applyNow')}

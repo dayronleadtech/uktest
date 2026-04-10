@@ -34,7 +34,7 @@ export function PassportSelectorWidget({
   )
 
   function handleApply() {
-    navigate('/apply')
+    navigate('/application/trip-details')
   }
 
   return (

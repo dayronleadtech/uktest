@@ -3,15 +3,6 @@ import { MapPin, ChevronRight, Globe, CircleHelp, Mail, DollarSign } from 'lucid
 import { useTranslation } from 'react-i18next'
 import { Heading } from '@/components/ui/Heading'
 
-const ARTICLE_LINKS = [
-  { key: 'footer.articles.edinburghGuide', href: '/blog/edinburgh-travel-guide-2025' },
-  { key: 'footer.articles.hiddenGems', href: '/blog/hidden-gems-uk-destinations' },
-  { key: 'footer.articles.visaGuide', href: '/blog/uk-visa-guide-eta-2025' },
-  { key: 'footer.articles.britishFood', href: '/blog/ultimate-guide-british-food-2025' },
-  { key: 'footer.articles.londonWithKids', href: '/blog/london-with-kids-2025' },
-  { key: 'footer.articles.familyActivities', href: '/blog/ultimate-uk-family-activities-guide-2025' },
-]
-
 export function Footer() {
   const { t } = useTranslation('common')
   const navigate = useNavigate()
@@ -31,9 +22,8 @@ export function Footer() {
 
   return (
     <footer className="bg-primary-700 text-white text-sm">
-      {/* Main grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
           {/* Company */}
           <div>
             <Heading level={3} className="mb-4 text-white">
@@ -58,26 +48,6 @@ export function Footer() {
                 </a>
               ))}
             </div>
-          </div>
-
-          {/* Articles */}
-          <div>
-            <Heading level={4} className="mb-4 text-white">
-              {t('footer.sections.articles')}
-            </Heading>
-            <ul className="space-y-2">
-              {ARTICLE_LINKS.map((item) => (
-                <li key={item.key}>
-                  <a
-                    href={item.href}
-                    className="flex items-center gap-2 text-gray-300 hover:text-white transition group"
-                  >
-                    <ChevronRight className="w-4 h-4 text-primary-500" />
-                    <span>{t(item.key)}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
           </div>
 
           {/* Support */}

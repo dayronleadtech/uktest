@@ -3,8 +3,6 @@ export const enCommon = {
   navigation: {
     home: 'Home',
     apply: 'Get my visa',
-    articles: 'UK Travel Articles',
-    aboutUs: 'About Us',
     myOrders: 'My Orders',
     login: 'Log in',
     logout: 'Log out',
@@ -39,20 +37,11 @@ export const enCommon = {
       location: 'London, United Kingdom',
     },
     sections: {
-      articles: 'Articles',
       support: 'Support',
       stayConnected: 'Stay Connected',
       newsletterText: 'Get the latest visa updates and news delivered to your inbox.',
       subscribeButton: 'Subscribe',
       followUs: 'Follow us on social media',
-    },
-    articles: {
-      edinburghGuide: 'Edinburgh Travel Guide',
-      hiddenGems: 'Hidden Gems of the UK',
-      visaGuide: 'Complete UK Visa Guide 2025',
-      britishFood: 'Ultimate Guide to British Food',
-      londonWithKids: 'London with Kids',
-      familyActivities: 'Ultimate UK Family Activities Guide',
     },
     supportLinks: {
       helpCenter: 'Help Center',
