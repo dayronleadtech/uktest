@@ -110,14 +110,14 @@ export function Footer() {
             <p className="text-gray-300 text-xs">{t('footer.bottom.copyright')}</p>
             <div className="flex flex-wrap justify-center md:justify-end gap-1 text-xs text-gray-200">
               <Link
-                to="/terms"
+                to="/terms-conditions"
                 className="hover:text-white transition px-2 py-1"
               >
                 {t('footer.legalLinks.termsOfService')}
               </Link>
               <span className="text-gray-200 py-1">|</span>
               <Link
-                to="/privacy"
+                to="/privacy-policy"
                 className="hover:text-white transition px-2 py-1"
               >
                 {t('footer.legalLinks.privacyPolicy')}
