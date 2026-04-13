@@ -2,6 +2,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { Menu, X, LogIn } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { useUiStore } from '@/store/uiStore'
+import logo from '/assets/images/logo.webp'
 
 export function Navbar() {
   const { t } = useTranslation('common')
@@ -23,18 +24,18 @@ export function Navbar() {
       {/* Desktop + mobile top bar — 5-column grid */}
       <div className="grid grid-cols-5 py-4 px-6 sm:px-6 md:px-12 flex items-center max-w-7xl mx-auto">
         {/* Col 1: Logo */}
-        <div className="flex flex-col items-start justify-center min-w-0 w-[250px]">
+        <div className="flex flex-col items-start justify-center min-w-0 w-[500px]">
           <Link
             to="/"
             onClick={() => setMobileNavOpen(false)}
             className="flex items-center cursor-pointer"
           >
             <img
-              src=''
+              src={logo}
               alt="UK Visa Portal"
               className="w-auto"
-              width="250"
-              height="40"
+              width="500"
+              height="79"
             />
           </Link>
         </div>
