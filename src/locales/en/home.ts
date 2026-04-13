@@ -15,7 +15,7 @@ export const enHome = {
       {
         title: 'Lightning-Fast Approval',
         description:
-          'Complete your UK ETA application in under 5 minutes. Our team reviews your submission and forwards it for processing. Simple, accurate, and stress-free..',
+          'Complete your UK ETA application in under 5 minutes. Our team reviews your submission and forwards it for processing. Simple, accurate, and stress-free.',
       },
       {
         title: 'Safe and Secure',
@@ -144,7 +144,7 @@ export const enHome = {
       {
         title: 'Payment Method',
         description:
-          'A valid credit or debit card is needed to pay the UK ETA processing fee.',
+          "A valid credit or debit card is required. You will be charged our service fee plus the UK Government's ETA fee. Full breakdown shown before payment.",
       },
       {
         title: 'Email Address',

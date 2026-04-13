@@ -24,7 +24,10 @@ export default function WhyUseSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <article className="rounded-2xl border border-gray-200 bg-gray-50 p-8">
-            <Heading level={3} className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-6">
+            <Heading 
+              level={3} 
+              useDefaultStyles={false}
+              className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-6">
               {t('whyUse.applyingOwn.title')}
             </Heading>
             <ul className="space-y-5">
@@ -40,7 +43,11 @@ export default function WhyUseSection() {
           </article>
 
           <article className="rounded-2xl border border-primary-green bg-white shadow-lg shadow-green-100 p-8 flex flex-col">
-            <Heading level={3} className="text-xs font-semibold uppercase tracking-widest text-primary-green mb-6">
+            <Heading
+              level={3}
+              useDefaultStyles={false}
+              className="text-xs font-semibold uppercase tracking-widest text-primary-green mb-6"
+            >
               {t('whyUse.withPortal.title')}
             </Heading>
             <ul className="space-y-5 flex-1">

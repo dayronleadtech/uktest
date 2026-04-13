@@ -23,7 +23,7 @@ export function Footer() {
   return (
     <footer className="bg-primary-700 text-white text-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Company */}
           <div>
             <Heading level={3} className="mb-4 text-white">
@@ -81,6 +81,9 @@ export function Footer() {
               ))}
             </ul>
           </div>
+
+          {/* Empty column to keep both visible columns at one-third width */}
+          <div className="hidden md:block" aria-hidden />
         </div>
       </div>
 
@@ -92,7 +95,7 @@ export function Footer() {
           </Heading>
           <div className="space-y-3">
             {paragraphs.map((p, i) => (
-              <p key={i} className="!text-gray-300 text-sm leading-relaxed">
+              <p key={i} className="text-sm md:text-base text-gray-600 leading-relaxed !text-gray-300 text-sm leading-relaxed">
                 {p}
               </p>
             ))}

@@ -6,6 +6,7 @@ type HeadingProps = {
   level?: Level
   children: ReactNode
   className?: string
+  useDefaultStyles?: boolean
 }
 
 const LEVEL_DEFAULTS: Record<Level, string> = {
@@ -17,10 +18,17 @@ const LEVEL_DEFAULTS: Record<Level, string> = {
   6: 'text-sm md:text-base font-medium',
 }
 
-export function Heading({ level = 2, children, className = '' }: HeadingProps) {
+export function Heading({
+  level = 2,
+  children,
+  className = '',
+  useDefaultStyles = true,
+}: HeadingProps) {
   const Tag = `h${level}` as 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
+  const classes = useDefaultStyles ? `${LEVEL_DEFAULTS[level]} ${className}`.trim() : className.trim()
+
   return (
-    <Tag className={`${LEVEL_DEFAULTS[level]} ${className}`.trim()}>
+    <Tag className={classes}>
       {children}
     </Tag>
   )

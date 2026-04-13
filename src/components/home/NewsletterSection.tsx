@@ -25,7 +25,7 @@ export function NewsletterSection() {
               </Heading>
             </div>
             <div className="lg:w-1/2 w-full">
-              <p className="text-sm mb-2 text-white">{tHome('newsletter.whereAmI')}</p>
+              <p className="text-sm md:text-base text-gray-600 leading-relaxed text-sm mb-2 text-white">{tHome('newsletter.whereAmI')}</p>
               <div className="flex flex-wrap gap-2">
                 <CountrySelect
                   countries={ELIGIBLE_COUNTRIES}

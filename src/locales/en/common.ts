@@ -55,9 +55,9 @@ export const enCommon = {
     importantDisclaimer: {
       title: 'Important Disclaimer',
       paragraphs: [
-        'We are an independent application support service for UK travel authorisations and visas. We are not affiliated with the UK government. Official ETA and visa decisions are made solely by UK authorities.',
+        'We are an independent application support service for UK travel authorisations and visas. We are not affiliated with, endorsed by, or connected to the UK Government or Home Office. Official ETA and visa decisions are made solely by UK authorities.',
         'We work with certified immigration professionals to provide assistance with ETA and Visitor Visa applications. Our service covers application guidance, data and document checks, submission support, and customer assistance to help reduce errors and save time.',
-        'Our fees are transparent. A full breakdown of service fees is clearly shown at checkout before payment is made. Once payment is completed, work on your application begins immediately and service fees are non refundable.',
+        'Our fees are transparent. A full breakdown of service fees is clearly shown at checkout before payment is made. Once payment is completed, work on your application begins immediately and service fees are non-refundable.',
       ],
     },
     bottom: {
