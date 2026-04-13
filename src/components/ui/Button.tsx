@@ -15,8 +15,8 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
     'bg-gradient-to-br from-primary-green to-primary-green-100 text-white hover:from-primary-green-100 hover:to-primary-green-200',
-  secondary: 'bg-primary-green text-white',
-  outline: 'bg-primary text-white border border-white',
+  secondary: 'bg-[#2db683] text-white',
+  outline: 'bg-[#0f2e49] text-white border border-white',
   'primary-outline': 'bg-white text-primary-green border border-primary-green',
 }
 

@@ -17,7 +17,7 @@ export function NewsletterSection() {
   return (
     <section className="py-12 md:py-16">
       <div className="max-w-7xl mx-auto px-6 md:px-12 text-white">
-        <div className="bg-primary rounded-lg p-8 md:p-12">
+        <div className="bg-[#0f2e49] rounded-lg p-8 md:p-12">
           <div className="flex flex-col lg:flex-row justify-start lg:items-center xl:gap-36 gap-4">
             <div className="lg:w-1/2">
               <Heading level={1} className="text-xl lg:text-2xl font-bold mb-2 text-white">

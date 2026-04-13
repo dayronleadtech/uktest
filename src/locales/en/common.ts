@@ -30,7 +30,7 @@ export const enCommon = {
   },
   footer: {
     company: {
-      name: 'UKVisaPortal',
+      name: 'UKVisaCentral',
       description:
         'We provide comprehensive guidance and support throughout your visa journey with expert assistance and reliable service.',
       since: 'Serving clients worldwide since 2016',
@@ -61,7 +61,7 @@ export const enCommon = {
       ],
     },
     bottom: {
-      copyright: `© ${new Date().getFullYear()} UKVisaPortal. All rights reserved.`,
+      copyright: `© ${new Date().getFullYear()} UKVisaCentral. All rights reserved.`,
     },
   },
   notFound: {

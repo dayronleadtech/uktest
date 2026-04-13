@@ -51,7 +51,7 @@ export function ETAValiditySection() {
         </div>
         <div className="flex justify-center mt-8">
           <Button
-            variant="primary"
+            variant="secondary"
             size="lg"
             icon={<ArrowRight className="h-6 w-6" />}
             onClick={() => navigate('/application/trip-details')}

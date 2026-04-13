@@ -70,7 +70,7 @@ export default function WhyUseSection() {
               <button
                 type="button"
                 onClick={() => navigate('/application/trip-details')}
-                className="w-full bg-primary-green text-white font-semibold py-3.5 rounded-xl flex items-center justify-center gap-2 hover:opacity-90 transition-opacity cursor-pointer text-sm"
+                className="w-full bg-[#2db683] text-white font-semibold py-3.5 rounded-xl flex items-center justify-center gap-2 hover:opacity-90 transition-opacity cursor-pointer text-sm"
               >
                 {t('whyUse.cta')}
                 <ArrowRight className="w-4 h-4" aria-hidden />

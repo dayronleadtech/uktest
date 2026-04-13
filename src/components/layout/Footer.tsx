@@ -12,7 +12,7 @@ export function Footer() {
 
   const supportLinks = [
     { key: 'footer.supportLinks.helpCenter', href: '/help-center', Icon: CircleHelp },
-    { key: 'footer.supportLinks.contactSupport', href: 'mailto:contact@ukvisaportal.com', Icon: Mail },
+    { key: 'footer.supportLinks.contactSupport', href: 'https://uk.ukvisaportals.com/contact', Icon: Mail },
     { key: 'footer.supportLinks.refundPolicy', href: null, Icon: DollarSign, onClick: () => navigate('/refund-policy') },
   ]
 
@@ -21,7 +21,7 @@ export function Footer() {
   ]
 
   return (
-    <footer className="bg-primary-700 text-white text-sm">
+    <footer className="text-white text-sm bg-[linear-gradient(180deg,_rgb(15_45_73/1)_0%,_rgb(51_83_121/1)_50%)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Company */}
@@ -29,10 +29,10 @@ export function Footer() {
             <Heading level={3} className="mb-4 text-white">
               {t('footer.company.name')}
             </Heading>
-            <p className="text-gray-300 leading-relaxed mb-4">
+            <p className=" leading-relaxed mb-4">
               {t('footer.company.description')}
             </p>
-            <div className="flex items-center gap-2 text-gray-300 mt-2">
+            <div className="flex items-center gap-2 mt-2">
               <Globe className="w-4 h-4" />
               <p>{t('footer.company.since')}</p>
             </div>
@@ -41,7 +41,7 @@ export function Footer() {
                 <a
                   key={i}
                   href={item.href}
-                  className="flex items-center gap-3 text-gray-300 hover:text-white transition"
+                  className="flex items-center gap-3 hover:text-white transition"
                 >
                   <item.icon className="w-4 h-4 text-primary-500" />
                   <p>{t(item.i18nKey)}</p>
@@ -61,7 +61,7 @@ export function Footer() {
                   {item.href ? (
                     <Link
                       to={item.href}
-                      className="flex items-center gap-2 text-gray-300 hover:text-white transition group"
+                      className="flex items-center gap-2 hover:text-white transition group"
                     >
                       <item.Icon className="w-4 h-4 text-primary-500" />
                       <span>{t(item.key)}</span>
@@ -70,7 +70,7 @@ export function Footer() {
                   ) : (
                     <button
                       onClick={item.onClick}
-                      className="flex items-center gap-2 text-gray-300 hover:text-white transition group"
+                      className="flex items-center gap-2 hover:text-white transition group"
                     >
                       <item.Icon className="w-4 h-4 text-primary-500" />
                       <span>{t(item.key)}</span>
@@ -95,7 +95,7 @@ export function Footer() {
           </Heading>
           <div className="space-y-3">
             {paragraphs.map((p, i) => (
-              <p key={i} className="text-sm md:text-base text-gray-600 leading-relaxed !text-gray-300 text-sm leading-relaxed">
+              <p key={i} className="text-sm md:text-base leading-relaxed text-sm leading-relaxed">
                 {p}
               </p>
             ))}
@@ -107,7 +107,7 @@ export function Footer() {
       <div className="border-t border-[#2f5f6e]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-2 md:gap-4">
-            <p className="text-gray-300 text-xs">{t('footer.bottom.copyright')}</p>
+            <p className=" text-xs">{t('footer.bottom.copyright')}</p>
             <div className="flex flex-wrap justify-center md:justify-end gap-1 text-xs text-gray-200">
               <Link
                 to="/terms-conditions"

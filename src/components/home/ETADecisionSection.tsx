@@ -88,7 +88,7 @@ export function ETADecisionSection() {
             {t('etaDecision.cta.description')}
           </p>
           <Button
-            variant="primary"
+            variant="secondary"
             size="lg"
             icon={<ArrowRight className="h-5 w-5" />}
             onClick={() => navigate('/application/trip-details')}

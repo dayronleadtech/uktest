@@ -20,7 +20,7 @@ export function Navbar() {
   }
 
   return (
-    <header className="sticky top-0 z-50 bg-primary min-h-[112px] flex items-center">
+    <header className="sticky top-0 z-50 min-h-[112px] flex items-center bg-[#0f2e49]">
       {/* Desktop + mobile top bar — 5-column grid */}
       <div className="grid grid-cols-5 py-4 px-6 sm:px-6 md:px-12 flex items-center max-w-7xl mx-auto">
         {/* Col 1: Logo */}

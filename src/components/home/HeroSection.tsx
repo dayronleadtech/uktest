@@ -19,9 +19,11 @@ const EXCLUDED_COUNTRIES = [
 export function PassportSelectorWidget({
   centered = true,
   showLabel = true,
+  isHero = false,
 }: {
   centered?: boolean
   showLabel?: boolean
+  isHero?: boolean
 }) {
   const { t } = useTranslation('home')
   const { t: tCommon } = useTranslation('common')
@@ -39,9 +41,9 @@ export function PassportSelectorWidget({
 
   return (
     <div className={centered ? 'max-w-2xl mx-auto' : 'w-full'}>
-      <div className="bg-[#E7EEEF52] rounded-lg p-6 lg:p-8">
+      <div className={`${isHero ? 'bg-[#ffffff21]' : 'bg-gray-50'} rounded-lg p-6 lg:p-8`}>
         {showLabel && (
-          <p className="text-sm md:text-base text-gray-600 leading-relaxed text-left text-lg font-medium text-gray-800 mb-4">
+          <p className="text-sm md:text-base leading-relaxed text-left text-lg font-medium mb-4">
             {t('hero.myPassport')}
           </p>
         )}
@@ -66,7 +68,7 @@ export function PassportSelectorWidget({
             {tCommon('buttons.applyNow')}
           </Button>
         </div>
-        <p className="text-center text-xs text-gray-500 mt-3">{t('hero.disclaimer')}</p>
+        <p className="text-center text-xs mt-3">{t('hero.disclaimer')}</p>
       </div>
     </div>
   )
@@ -76,15 +78,15 @@ export function HeroSection() {
   const { t } = useTranslation('home')
 
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-white py-16 lg:pt-24">
-      <div className="max-w-5xl mx-auto px-4 text-center">
-        <Heading level={1} className="text-4xl lg:text-5xl font-normal text-gray-900 mb-4">
+    <section className="bg-[linear-gradient(180deg,_rgb(15_45_73/1)_0%,_rgb(51_83_121/1)_50%)] py-16 lg:pt-24">
+      <div className="max-w-5xl mx-auto px-4 text-center text-white">
+        <Heading level={1} className="text-4xl lg:text-5xl font-normal mb-4">
           <strong>{t('hero.title')}</strong>
         </Heading>
-        <p className="text-sm md:text-base text-gray-600 leading-relaxed lg:text-xl mb-6">
+        <p className="text-sm md:text-base leading-relaxed lg:text-xl mb-6">
           {t('hero.subtitle')}
         </p>
-        <PassportSelectorWidget />
+        <PassportSelectorWidget isHero={true} />
       </div>
     </section>
   )
