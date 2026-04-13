@@ -66,6 +66,7 @@ export function PassportSelectorWidget({
             {tCommon('buttons.applyNow')}
           </Button>
         </div>
+        <p className="text-center text-xs text-gray-500 mt-3">{t('hero.disclaimer')}</p>
       </div>
     </div>
   )

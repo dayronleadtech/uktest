@@ -3,6 +3,7 @@ import { MarketingLayout } from '@/components/layout/MarketingLayout'
 import { HeroSection } from '@/components/home/HeroSection'
 
 const BenefitsSection = lazy(() => import('@/components/home/BenefitsSection'))
+const WhyUseSection = lazy(() => import('@/components/home/WhyUseSection'))
 const ApplicationProcess = lazy(() => import('@/components/home/ApplicationProcess'))
 const EligibleCountries = lazy(() => import('@/components/home/EligibleCountries'))
 const ETAValiditySection = lazy(() => import('@/components/home/ETAValiditySection'))
@@ -20,6 +21,7 @@ export default function HomePage() {
         <HeroSection />
         <Suspense fallback={null}>
           <BenefitsSection />
+          <WhyUseSection />
           <ApplicationProcess />
           <EligibleCountries />
           <ETAValiditySection />

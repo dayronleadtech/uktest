@@ -20,11 +20,11 @@ export function Navbar() {
   }
 
   return (
-    <header className="sticky top-0 z-50 bg-primary">
+    <header className="sticky top-0 z-50 bg-primary min-h-[112px] flex items-center">
       {/* Desktop + mobile top bar — 5-column grid */}
       <div className="grid grid-cols-5 py-4 px-6 sm:px-6 md:px-12 flex items-center max-w-7xl mx-auto">
         {/* Col 1: Logo */}
-        <div className="flex flex-col items-start justify-center min-w-0">
+        <div className="flex flex-col items-start justify-center min-w-0 w-[250px]">
           <Link
             to="/"
             onClick={() => setMobileNavOpen(false)}

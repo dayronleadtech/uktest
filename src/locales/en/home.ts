@@ -5,16 +5,17 @@ export const enHome = {
       'Your guide to understanding the UK Electronic Travel Authorization (ETA) requirements and submitting your application accurately and efficiently',
     myPassport: 'My Passport',
     selectCountry: 'Select your country',
+    disclaimer: 'Quick, accurate application — service fee shown at checkout',
   },
   benefits: {
     title: 'Your Essential Guide to the UK ETA',
     subtitle:
-      'Navigate the UK Electronic Travel Authorization (ETA) requirements with ease and skip the complexity—our step-by-step resources and streamlined official-style process ensure you complete your application swiftly, accurately, and securely, trusted by travelers worldwide for hassle-free UK entry without any surprises.',
+      'Navigate the UK Electronic Travel Authorization (ETA) requirements with confidence. Our step-by-step guidance and expert review help you complete your application accurately and efficiently, with support at every stage.',
     items: [
       {
         title: 'Lightning-Fast Approval',
         description:
-          'Fill out your application in under 5 minutes and get your approved UK ETA delivered straight to your email - often in as little as 30 minutes. No queues, no hassle, just official access to the UK.',
+          'Complete your UK ETA application in under 5 minutes. Our team reviews your submission and forwards it for processing. Simple, accurate, and stress-free..',
       },
       {
         title: 'Safe and Secure',
@@ -24,7 +25,7 @@ export const enHome = {
       {
         title: 'Trusted by Thousands',
         description:
-          "Join thousands of travelers who've enjoyed our reliable service. Rest easy knowing we're fully compliant with official UK standards for a smooth start to your trip.",
+          "Thousands of travelers trust us to handle their UK ETA applications accurately. Our process follows all current UK ETA requirements so your trip starts without complications.",
       },
       {
         title: 'Expert Guidance Around the Clock',
@@ -33,24 +34,67 @@ export const enHome = {
       },
     ],
   },
+  whyUse: {
+    title: 'Why use UK Visa Portal?',
+    subtitle: 'We handle the details so your application goes through first time.',
+    applyingOwn: {
+      title: 'Applying on your own',
+      items: [
+        'Easy to miss questions or submit incorrect details',
+        'No expert review before submission',
+        'You monitor the application status yourself',
+        'No support if your application is delayed or rejected',
+        'You handle any follow-up with authorities yourself',
+      ],
+    },
+    withPortal: {
+      title: 'With UK Visa Portal',
+      items: [
+        {
+          highlight: 'Accuracy check',
+          text: '— we review your details before submitting',
+        },
+        {
+          highlight: 'Expert guidance',
+          text: 'on every question and document required',
+        },
+        {
+          highlight: 'We monitor your application',
+          text: 'and notify you of updates',
+        },
+        {
+          highlight: '24/7 support',
+          text: 'if anything goes wrong',
+        },
+        {
+          highlight: 'We handle follow-up',
+          text: "so you don't have to",
+        },
+      ],
+    },
+    cta: 'Apply Now',
+    disclaimer: 'Service fee applies · Full breakdown shown before payment',
+    independentNotice:
+      'UK Visa Portal is an independent assistance service. Not affiliated with the UK Government.',
+  },
   process: {
     title: 'Our Application Process',
     subtitle: "Here's how to apply for different travel documents with us.",
     steps: [
       {
-        title: 'Apply',
+        title: 'Complete your application',
         description:
-          'Answer some initial information, make your payment, and provide some final information.',
+          'Fill in your details and pay our service fee. We check everything for accuracy before submission.',
       },
       {
-        title: 'Leave the rest to us',
+        title: 'We submit to the UK Home Office',
         description:
-          "Get easy access to your document via email. If an embassy appointment is required to get your document, we'll schedule it for you.",
+          "Our team submits your ETA application on your behalf. You'll receive your result by email.",
       },
       {
-        title: 'Ready for Landing',
+        title: 'Travel with confidence',
         description:
-          'Be ready to show your passport and document when you land at your destination.',
+          'Your approved ETA is linked to your passport digitally. Show your passport at the UK border — no printed documents needed.',
       },
     ],
   },
