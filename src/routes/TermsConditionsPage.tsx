@@ -1,5 +1,5 @@
 import { MarketingLayout } from '@/components/layout/MarketingLayout'
-import Banner from '@/assets/legal-hero-banner.jpg'
+import Banner from '/assets/images/legal-hero-banner.jpg'
 
 export default function TermsConditionsPage() {
   return (
