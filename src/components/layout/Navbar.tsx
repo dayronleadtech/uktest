@@ -2,6 +2,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { Menu, X, LogIn } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { useUiStore } from '@/store/uiStore'
+import logo from '@/assets/logo_lg.webp'
 
 export function Navbar() {
   const { t } = useTranslation('common')
@@ -30,7 +31,7 @@ export function Navbar() {
             className="flex items-center cursor-pointer"
           >
             <img
-              src="http://uk.ukvisaportals.com.sandbox/static/img/unitedkingdometa/unitedkingdometa1/logo_lg.webp"
+              src={logo}
               alt="UK Visa Portal"
               className="w-auto"
               width="250"

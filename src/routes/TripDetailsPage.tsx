@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import { ArrowRight, Calendar, CalendarCheck, Plane, Plus, Minus } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { Heading } from '@/components/ui/Heading'
@@ -21,7 +20,6 @@ const EXCLUDED_COUNTRIES = [
 
 export default function TripDetailsPage() {
   const { t } = useTranslation('application')
-  const navigate = useNavigate()
   const selectedCountryId = useUiStore((s) => s.selectedCountryId)
   const setSelectedCountry = useUiStore((s) => s.setSelectedCountry)
 
@@ -141,14 +139,15 @@ export default function TripDetailsPage() {
                 <p className="mt-2 text-sm text-[#6c757d]">{t('tripDetails.travellersHint')}</p>
               </div>
 
-              <button
-                type="button"
-                onClick={() => navigate('/application/your-info')}
+              <a
+                href="https://uk.ukvisaportals.com/application?step=open"
+                target="_blank"
+                rel="noreferrer"
                 className="mt-8 w-full inline-flex items-center justify-center gap-2 rounded-lg bg-[#005a30] hover:bg-[#004d28] text-white font-bold text-base py-4 px-6 transition-colors"
               >
                 {t('tripDetails.beginApplication')}
                 <ArrowRight className="h-5 w-5" aria-hidden />
-              </button>
+              </a>
             </div>
           </div>
         </div>
