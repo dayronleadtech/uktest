@@ -45,8 +45,8 @@ export default function TripDetailsPage() {
 
   return (
     <div className="flex-1">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-10">
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#001a33] mb-3 text-center lg:text-left">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-10">
+        <h1 className="text-2xl md:text-3xl font-bold text-2xl lg:text-3xl font-bold text-gray-900 mb-2">
           {t('tripDetails.title')}
         </h1>
         <p className="text-base text-[#6c757d] mb-8 lg:mb-10 text-center lg:text-left max-w-4xl">
@@ -61,32 +61,32 @@ export default function TripDetailsPage() {
                 <Heading level={2} className="text-lg sm:text-xl font-bold text-[#001a33] mb-6">
                   {t('tripDetails.infoCardTitle')}
                 </Heading>
-                <ul className="space-y-5">
-                  <li className="flex gap-3">
+                <ul className="p-6 space-y-6">
+                  <li className="flex items-start gap-3">
                     <Calendar className="h-6 w-6 text-primary shrink-0 mt-0.5" aria-hidden />
-                    <p className="text-[#001a33] text-sm sm:text-base leading-relaxed">
+                    <p className="text-[#001a33] text-sm sm:text-base leading-relaxed font-medium">
                       {t('tripDetails.validity')}{' '}
                       <strong>{t('tripDetails.validityBold')}</strong>
                     </p>
                   </li>
-                  <li className="flex gap-3">
+                  <li className="flex items-start gap-3">
                     <Plane className="h-6 w-6 text-primary shrink-0 mt-0.5" aria-hidden />
-                    <p className="text-[#001a33] text-sm sm:text-base leading-relaxed">
+                    <p className="text-[#001a33] text-sm sm:text-base leading-relaxed font-medium">
                       {t('tripDetails.multipleVisits')}
                     </p>
                   </li>
-                  <li className="flex gap-3">
+                  <li className="flex items-start gap-3">
                     <CalendarCheck className="h-6 w-6 text-primary shrink-0 mt-0.5" aria-hidden />
-                    <p className="text-[#001a33] text-sm sm:text-base leading-relaxed">
+                    <p className="text-[#001a33] text-sm sm:text-base leading-relaxed font-medium">
                       {t('tripDetails.stay')}
                     </p>
                   </li>
                 </ul>
-              </div>
-              <div className="bg-gray-100 px-6 py-4 sm:px-8">
-                <p className="text-xs sm:text-sm text-[#6c757d] leading-relaxed">
-                  {t('tripDetails.infoCardFooter')}
-                </p>
+                <div className="pt-6 mt-2 border-t border-gray-200">
+                  <p className="bg-gray-50 rounded-lg p-4 text-sm text-gray-700 leading-relaxed">
+                    {t('tripDetails.infoCardFooter')}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
