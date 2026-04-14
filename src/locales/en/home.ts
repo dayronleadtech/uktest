@@ -35,7 +35,7 @@ export const enHome = {
     ],
   },
   whyUse: {
-    title: 'Why use UK Visa Portal?',
+    title: 'Why use UK Visa Central?',
     subtitle: 'We handle the details so your application goes through first time.',
     applyingOwn: {
       title: 'Applying on your own',
@@ -48,7 +48,7 @@ export const enHome = {
       ],
     },
     withPortal: {
-      title: 'With UK Visa Portal',
+      title: 'With UK Visa Central',
       items: [
         {
           highlight: 'Accuracy check',
@@ -75,7 +75,7 @@ export const enHome = {
     cta: 'Apply Now',
     disclaimer: 'Service fee applies · Full breakdown shown before payment',
     independentNotice:
-      'UK Visa Portal is an independent assistance service. Not affiliated with the UK Government.',
+      'UK Visa Central is an independent assistance service. Not affiliated with the UK Government.',
   },
   process: {
     title: 'Our Application Process',

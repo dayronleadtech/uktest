@@ -28,7 +28,7 @@ export default function PrivacyPolicyPage() {
               </h2>
               <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-8">
                 This Privacy Policy describes how Active Leadgen LLC, operating
-                under the brand name UK Visa Portal (&quot;UK Visa Portal,&quot;
+                under the brand name UK Visa Central (&quot;UK Visa Central,&quot;
                 &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;), collects,
                 uses, discloses, and protects the personal data of users who
                 interact with our website, mobile applications, and related
@@ -53,7 +53,7 @@ export default function PrivacyPolicyPage() {
               </p>
               <ul className="list-disc pl-6 mb-6 space-y-2">
                 <li>Contact us with questions or support inquiries</li>
-                <li>Register an account on UK Visa Portal</li>
+                <li>Register an account on UK Visa Central</li>
                 <li>Apply for a visa or other travel documentation</li>
                 <li>Subscribe to newsletters or marketing communications</li>
                 <li>

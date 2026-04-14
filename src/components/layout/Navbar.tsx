@@ -32,7 +32,7 @@ export function Navbar() {
           >
             <img
               src={logo}
-              alt="UK Visa Portal"
+              alt="UK Visa Central"
               className="w-auto"
               width="500"
               height="79"

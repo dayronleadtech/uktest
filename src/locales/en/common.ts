@@ -1,5 +1,5 @@
 export const enCommon = {
-  brand: 'UK Visa Portal',
+  brand: 'UK Visa Central',
   navigation: {
     home: 'Home',
     apply: 'Get my visa',

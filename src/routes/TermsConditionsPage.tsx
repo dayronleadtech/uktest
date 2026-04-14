@@ -30,7 +30,7 @@ export default function TermsConditionsPage() {
           <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-8">
             These Terms and Conditions ("Agreement") outline the legally binding
             terms between you ("User," "you," or "your") and Active Leadgen LLC,
-            operating as UK Visa Portal ("we," "us," or "our"). This Agreement
+            operating as UK Visa Central ("we," "us," or "our"). This Agreement
             governs your access to and use of our website, mobile applications,
             and all related services (collectively, the "Services").
           </p>
@@ -41,10 +41,10 @@ export default function TermsConditionsPage() {
             from using our Services.
           </p>
           <h2 className="text-xl md:text-2xl font-bold text-2xl font-bold text-gray-900 mt-12 mb-6">
-            2. About UK Visa Portal
+            2. About UK Visa Central
           </h2>
           <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-6">
-            UK Visa Portal is a private, third-party visa assistance platform
+            UK Visa Central is a private, third-party visa assistance platform
             that provides professional support for UK ETA visa applications to
             the United Kingdom. We help users understand visa requirements,
             prepare supporting documentation, and ensure their submissions meet
@@ -96,7 +96,7 @@ export default function TermsConditionsPage() {
             4. Services We Provide
           </h2>
           <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-4">
-            UK Visa Portal offers professional support in the following areas:
+            UK Visa Central offers professional support in the following areas:
           </p>
           <ul className="list-disc pl-6 mb-6 space-y-2">
             <li>
@@ -121,7 +121,7 @@ export default function TermsConditionsPage() {
             </li>
           </ul>
           <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-6">
-            Please note that UK Visa Portal does not guarantee visa approval.
+            Please note that UK Visa Central does not guarantee visa approval.
             All final decisions are made exclusively by the issuing government
             or consular body.
           </p>
@@ -253,7 +253,7 @@ export default function TermsConditionsPage() {
             You are solely responsible for the accuracy of all data and
             documents submitted through our Services. Submitting false,
             incorrect, or incomplete information may result in delays or
-            rejection of your visa application. UK Visa Portal shall not be held
+            rejection of your visa application. UK Visa Central shall not be held
             liable for errors, delays, or rejections resulting from inaccurate
             information provided by users.
           </p>
@@ -272,7 +272,7 @@ export default function TermsConditionsPage() {
             9. Intellectual Property
           </h2>
           <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-6">
-            All content available on the UK Visa Portal website and applications
+            All content available on the UK Visa Central website and applications
             — including text, graphics, logos, icons, software, and layout
             design — is the intellectual property of Active Leadgen LLC or its
             licensors. You may not reproduce, modify, distribute, or use this
