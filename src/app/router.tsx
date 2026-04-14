@@ -12,8 +12,13 @@ const PrivacyPolicyPage = lazy(() => import('@/routes/PrivacyPolicyPage'))
 
 function RouteFallback() {
   return (
-    <div className="route-fallback" role="status" aria-live="polite">
-      Loading…
+    <div
+      className="flex min-h-screen items-center justify-center"
+      role="status"
+      aria-live="polite"
+      aria-label="Loading"
+    >
+      <div className="h-10 w-10 animate-spin rounded-full border-4 border-gray-300 border-t-[#0f2e49]" />
     </div>
   )
 }
