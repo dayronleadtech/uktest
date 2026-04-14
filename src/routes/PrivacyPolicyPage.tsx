@@ -1,5 +1,6 @@
 import { MarketingLayout } from '@/components/layout/MarketingLayout'
 import Banner from '/assets/images/legal-hero-banner.jpg'
+import { BASE_URL } from '@/constants/constants'
 
 export default function PrivacyPolicyPage() {
   return (
@@ -27,7 +28,7 @@ export default function PrivacyPolicyPage() {
                 1. Introduction
               </h2>
               <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-8">
-                This Privacy Policy describes how Active Leadgen LLC, operating
+                This Privacy Policy describes how U.S. Vital Documents LLC, operating
                 under the brand name UK Visa Central (&quot;UK Visa Central,&quot;
                 &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;), collects,
                 uses, discloses, and protects the personal data of users who
@@ -180,7 +181,7 @@ export default function PrivacyPolicyPage() {
               </ul>
               <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-6">
                 To exercise your rights, please <a
-              href="https://uk.ukvisaportals.com/contact"
+              href={`${BASE_URL}/contact`}
               className="text-primary hover:underline"
             >contact us</a>
               </p>
@@ -288,7 +289,7 @@ export default function PrivacyPolicyPage() {
                 </li>
               </ul>
               <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-6">
-                To submit a CCPA request, please <a href="https://uk.ukvisaportals.com/contact" className="text-primary hover:underline">contact us</a>
+                To submit a CCPA request, please <a href={`${BASE_URL}/contact`} className="text-primary hover:underline">contact us</a>
               </p>
             </section>
 
@@ -298,7 +299,7 @@ export default function PrivacyPolicyPage() {
               </h2>
               <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-6">
                 If you have any questions or concerns about this Privacy Policy,
-                please <a href="https://uk.ukvisaportals.com/contact" className="text-primary hover:underline">contact us</a>.
+                please <a href={`${BASE_URL}/contact`} className="text-primary hover:underline">contact us</a>.
               </p>
             </section>
           </div>

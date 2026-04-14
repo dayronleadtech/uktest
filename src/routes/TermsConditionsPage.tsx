@@ -1,5 +1,6 @@
 import { MarketingLayout } from '@/components/layout/MarketingLayout'
 import Banner from '/assets/images/legal-hero-banner.jpg'
+import { BASE_URL } from '@/constants/constants'
 
 export default function TermsConditionsPage() {
   return (
@@ -29,7 +30,7 @@ export default function TermsConditionsPage() {
           </h2>
           <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-8">
             These Terms and Conditions ("Agreement") outline the legally binding
-            terms between you ("User," "you," or "your") and Active Leadgen LLC,
+            terms between you ("User," "you," or "your") and U.S. Vital Documents LLC,
             operating as UK Visa Central ("we," "us," or "our"). This Agreement
             governs your access to and use of our website, mobile applications,
             and all related services (collectively, the "Services").
@@ -274,7 +275,7 @@ export default function TermsConditionsPage() {
           <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-6">
             All content available on the UK Visa Central website and applications
             — including text, graphics, logos, icons, software, and layout
-            design — is the intellectual property of Active Leadgen LLC or its
+            design — is the intellectual property of U.S. Vital Documents LLC or its
             licensors. You may not reproduce, modify, distribute, or use this
             content without our prior written consent.
           </p>
@@ -302,7 +303,7 @@ export default function TermsConditionsPage() {
             12. Limitation of Liability
           </h2>
           <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-4">
-            To the fullest extent permitted by law, Active Leadgen LLC shall not
+            To the fullest extent permitted by law, U.S. Vital Documents LLC shall not
             be liable for any indirect, incidental, special, or consequential
             damages resulting from:
           </p>
@@ -372,7 +373,7 @@ export default function TermsConditionsPage() {
           </h2>
           <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-4">
             For any questions or concerns regarding these Terms, please <a
-              href="https://uk.ukvisaportals.com/contact"
+              href={`${BASE_URL}/contact`}
               className="text-primary hover:underline"
             >contact us</a>
           </p>

@@ -44,7 +44,6 @@ export const enCommon = {
       followUs: 'Follow us on social media',
     },
     supportLinks: {
-      helpCenter: 'Help Center',
       contactSupport: 'Contact Support',
       refundPolicy: 'Refund Policy',
     },

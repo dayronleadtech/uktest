@@ -1,19 +1,26 @@
-import { Link, useNavigate } from 'react-router-dom'
-import { MapPin, ChevronRight, Globe, CircleHelp, Mail, DollarSign } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { MapPin, ChevronRight, Globe, Mail, DollarSign } from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { Heading } from '@/components/ui/Heading'
+import { BASE_URL } from '@/constants/constants'
+
+type SupportLink = {
+  key: string
+  Icon: LucideIcon
+  href?: string
+  onClick?: () => void
+}
 
 export function Footer() {
   const { t } = useTranslation('common')
-  const navigate = useNavigate()
   const paragraphs = t('footer.importantDisclaimer.paragraphs', {
     returnObjects: true,
   }) as string[]
 
-  const supportLinks = [
-    { key: 'footer.supportLinks.helpCenter', href: '/help-center', Icon: CircleHelp },
-    { key: 'footer.supportLinks.contactSupport', href: 'https://uk.ukvisaportals.com/contact', Icon: Mail },
-    { key: 'footer.supportLinks.refundPolicy', href: null, Icon: DollarSign, onClick: () => navigate('/refund-policy') },
+  const supportLinks: SupportLink[] = [
+    { key: 'footer.supportLinks.contactSupport', href: `${BASE_URL}/contact`, Icon: Mail },
+    { key: 'footer.supportLinks.refundPolicy', href: `${BASE_URL}/refund`, Icon: DollarSign }
   ]
 
   const locationLinks = [

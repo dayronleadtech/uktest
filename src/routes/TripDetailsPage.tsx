@@ -5,6 +5,7 @@ import { Heading } from '@/components/ui/Heading'
 import { CountrySelect } from '@/components/ui/CountrySelect'
 import { ELIGIBLE_COUNTRIES } from '@/data/countries'
 import { useUiStore } from '@/store/uiStore'
+import { BASE_URL } from '@/constants/constants'
 
 /** Default passport selection to match live reference (Spain). */
 const SPAIN_COUNTRY_ID = 'cmfmdxfi7001012jll0ar6q8c'
@@ -140,7 +141,7 @@ export default function TripDetailsPage() {
               </div>
 
               <a
-                href="https://uk.ukvisaportals.com/application?step=open"
+                href={`${BASE_URL}/application`}
                 target="_blank"
                 rel="noreferrer"
                 className="mt-8 w-full inline-flex items-center justify-center gap-2 rounded-lg bg-[#005a30] hover:bg-[#004d28] text-white font-bold text-base py-4 px-6 transition-colors"
