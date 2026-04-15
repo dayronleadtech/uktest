@@ -55,7 +55,7 @@ export function ApplicationProcess() {
           </div>
           <div className="lg:w-1/2">
             <img
-              src="/assets/images/home/traveler.png"
+              src="/assets/images/home/traveler.webp"
               alt="Traveler at airport"
               className="w-full rounded-lg"
               loading="lazy"

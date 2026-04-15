@@ -1,5 +1,5 @@
 import { MarketingLayout } from '@/components/layout/MarketingLayout'
-import Banner from '/assets/images/legal-hero-banner.jpg'
+import Banner from '/assets/images/legal-hero-banner.webp'
 import { BASE_URL } from '@/constants/constants'
 
 export default function PrivacyPolicyPage() {
