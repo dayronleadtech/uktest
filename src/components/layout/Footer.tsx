@@ -116,19 +116,13 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-2 md:gap-4">
             <p className=" text-xs">{t('footer.bottom.copyright')}</p>
             <div className="flex flex-wrap justify-center md:justify-end gap-1 text-xs text-gray-200">
-              <Link
-                to="/terms-conditions"
-                className="hover:text-white transition px-2 py-1"
-              >
+              <a href={`${BASE_URL}/terms`} className="hover:text-white transition px-2 py-1" title={t('footer.legalLinks.termsOfService')}>
                 {t('footer.legalLinks.termsOfService')}
-              </Link>
+              </a>
               <span className="text-gray-200 py-1">|</span>
-              <Link
-                to="/privacy-policy"
-                className="hover:text-white transition px-2 py-1"
-              >
+              <a href={`${BASE_URL}/privacy`} className="hover:text-white transition px-2 py-1" title={t('footer.legalLinks.privacyPolicy')}>
                 {t('footer.legalLinks.privacyPolicy')}
-              </Link>
+              </a>
             </div>
           </div>
         </div>

@@ -142,8 +142,8 @@ export default function TripDetailsPage() {
 
               <a
                 href={`${BASE_URL}/application`}
-                target="_blank"
                 rel="noreferrer"
+                title={t('tripDetails.beginApplication')}
                 className="mt-8 w-full inline-flex items-center justify-center gap-2 rounded-lg bg-[#005a30] hover:bg-[#004d28] text-white font-bold text-base py-4 px-6 transition-colors"
               >
                 {t('tripDetails.beginApplication')}
