@@ -34,7 +34,7 @@ export const enCommon = {
       description:
         'We provide comprehensive guidance and support throughout your visa journey with expert assistance and reliable service.',
       since: 'Serving clients worldwide since 2016',
-      location: 'London, United Kingdom',
+      location: 'U.S. Vital Documents LLC, 312 W. 2nd St, Casper, WY 82601, US',
     },
     sections: {
       support: 'Support',

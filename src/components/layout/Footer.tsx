@@ -48,7 +48,7 @@ export function Footer() {
                 <a
                   key={i}
                   href={item.href}
-                  className="flex items-center gap-3 hover:text-white transition"
+                  className="flex items-start gap-3 hover:text-white transition"
                 >
                   <item.icon className="w-4 h-4 text-primary-500" />
                   <p>{t(item.i18nKey)}</p>
