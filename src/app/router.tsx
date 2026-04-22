@@ -1,11 +1,9 @@
 import { lazy, Suspense } from 'react'
-import { createBrowserRouter, Outlet } from 'react-router-dom'
+import { Navigate, createBrowserRouter, Outlet } from 'react-router-dom'
 import { ApplicationLayout } from '@/components/layout/ApplicationLayout'
 
 const HomePage = lazy(() => import('@/routes/HomePage'))
 const NotFoundPage = lazy(() => import('@/routes/NotFoundPage'))
-const PlaceholderPage = lazy(() => import('@/routes/PlaceholderPage'))
-const ApplicationYourInfoPage = lazy(() => import('@/routes/ApplicationYourInfoPage'))
 const TripDetailsPage = lazy(() => import('@/routes/TripDetailsPage'))
 
 function RouteFallback() {
@@ -34,16 +32,15 @@ export const router = createBrowserRouter([
     element: <SuspenseLayout />,
     children: [
       { path: '/', element: <HomePage /> },
+      { path: '/404', element: <NotFoundPage /> },
       {
         path: '/application',
         element: <ApplicationLayout />,
         children: [
-          { path: 'trip-details', element: <TripDetailsPage /> },
-          { path: 'your-info', element: <ApplicationYourInfoPage /> },
+          { index: true, element: <Navigate to="/404" replace /> },
+          { path: 'trip-details', element: <TripDetailsPage /> }
         ],
       },
-      { path: '/apply', element: <PlaceholderPage /> },
-      { path: '/login', element: <PlaceholderPage /> },
       { path: '*', element: <NotFoundPage /> }
     ],
   },
